@@ -1,0 +1,14 @@
+  {
+    "name": "OTF",
+    "version": "1.0",
+    "manifest_version": 2,
+	"description": "Minimalistic solution to get old font-style back, made by Mudsaf@ttv.",
+	"permissions": ["*://*.twitch.tv/*"],
+	"content_scripts": [
+		{
+		"run_at" : "document_idle",
+		"matches": ["*://*.twitch.tv/*"],
+		"js": ["content.js"]
+		}
+	]
+  }
